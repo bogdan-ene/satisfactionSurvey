@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Survey Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  </head>
+  <body>
+    <h1 id="title">Improving website</h1>
+    <p id="description">Thank you for taking the time to complete this questionaire</p>
+    <form id="survey-form">
+     <div class="form-div">
+      <label id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter you full name" required />
+      </div>
+      
+       <div class="form-div">
+      <label id="email-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+      </div>
+
+ <div class="form-div">
+      <label id="number-label">Age (optional)</label>
+       <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="115" required />
+       </div>
+
+  <div class="form-div">
+    <label id="dropdown-label">What option best describes your current position?</label>
+    <select id="dropdown">
+      <option value=""> Select current position </option>
+ <option value=""> Student </option>
+  <option value=""> Employee </option>
+   <option value=""> Learner </option>
+    <option value=""> Prefer not to say </option>
+     <option value=""> Other </option>
+
+    </select>
+  </div>
+
+  <div class="form-div">
+    <label id="radio-label"> Would you recommend this website?</label>
+    <div class="form-radio">
+    <label id="yes"><input type="radio" value="yes" name="radio-btn" /><span class="value">Yes</span></label>
+    </div>
+    <div class="form-radio">
+      <label id="no"><input type="radio" value="no" name="radio-btn" /><span class="value">No</span></label>
+      </div>
+      <div class="form-radio">
+        <label id="maybe"><input type="radio" value="maybe" name="radio-btn" /><span class="value">Maybe</span></label>
+        </div>
+  </div>
+
+ <label id="dropdown-label-likes">What feature do you like the most at this website?</label>
+    <select id="dropdown-menu">
+      <option value=""> Content </option>
+ <option value=""> Layout and style </option>
+  <option value=""> Transparency </option>
+   <option value=""> Social network </option>
+    <option value=""> Prefer not to say </option>
+     
+
+    </select>
+
+    <div class="form-div">
+      <label id="label-checkbox"> Which feature do you think that should be improved?</label>
+      <div class="div-checkbox">
+        <input type="checkbox" value="improve" value="1" /><label>News</label>
+      </div>
+       <div class="div-checkbox">
+        <input type="checkbox" value="improve" value="1" /><label>Stories</label>
+      </div>
+       <div class="div-checkbox">
+        <input type="checkbox" value="improve" value="1" /><label>Pictures</label> <br />
+      </div>
+      </div>
+
+      <div class="div-class">
+        <label id="label-area">Comments</label>
+        <textarea name="comment" placeholder="Post your comment"></textarea>
+      </div>
+    <div class="form-div btn">
+      <input type="submit" value="Submit" id="submit" type="submit" />
+    </div>
+    </form>
+  </body>
+</html>
